@@ -1,0 +1,26 @@
+create table Login_Details(fname varchar2(20) NOT NULL, lname varchar2(20) NOT NULL, username varchar2(60) primary key, password varchar2(20) NOT NULL, role varchar2(20) NOT NULL);
+
+insert into login_details values('Kishan', 'Kumar', 'emp101@ss.com','1234', 'employee');
+
+insert into login_details values('Kedar', 'Nath', 'emp102@ss.com','1234', 'employee');
+
+insert into login_details values('Parul', 'Singh', 'spoc101@ss.com','1234', 'spoc');
+
+create table jobs(
+    jobcode VARCHAR2(10) primary key,
+    skill VARCHAR2(40) NOT NULL,
+    experience VARCHAR2(20) NOT NULL,
+    location VARCHAR2(40) NOT NULL,
+    sname VARCHAR2(40) NOT NULL,
+    smailid VARCHAR2(40) NOT NULL);
+    
+    select * from user_sequences;
+    
+    
+CREATE SEQUENCE jobidgeneration
+START WITH 20000
+INCREMENT BY 2;
+
+
+
+
